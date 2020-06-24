@@ -8,6 +8,10 @@ app.set('view engine', 'ejs');
 //Public files
 app.use(express.static('src/public'));
 
+//body parser
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({extended: true}))
+
 //Routes
 const consign = require('consign');
 consign()

@@ -12,7 +12,7 @@
 
 O projeto consiste numa arquitetura MVC (Model-View-Controller), contendo a estrutura de pastas e dependências, sendo assim gerando agilidade na construção de novos projetos.
 
-## 📝Dependências 
+## 📝 Dependências 
 
 Abaixo, segue tabela das dependências e suas respectivas versões.
 
@@ -25,3 +25,23 @@ Abaixo, segue tabela das dependências e suas respectivas versões.
 | express-validator  | 2.20.8 |
 | mysql              | 2.18.1 |
 | nodemon            | 2.0.4  |
+
+## 🏃 Run forest
+
+Com o projeto clonado, acesse a pasta dos arquivos
+
+```
+$ cd mvc-node
+```
+
+Instale as dependências 
+
+```
+$ yarn
+```
+
+Em seguida rode o projeto
+
+```
+$ nodemon app
+```
