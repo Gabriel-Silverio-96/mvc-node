@@ -5,8 +5,9 @@ module.exports.index = (app, req, res) => {
     const model = new app.src.models.modelDAO(connection);
 
     model.getList((err, result) => {
+        const links = require('../views/includes/includeLinksHead')
         //res.send(result)        
-        res.render('../src/views/index', {data: 'Hello my friend'});        
+        res.render('../src/views/index', {data: 'Hello my friend', includeLinksHead: links});        
 
         if(err != null) {
             console.log(err);
